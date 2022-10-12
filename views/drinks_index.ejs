@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style type="text/css">
+        body{
+            color: #D8D9CF;
+            background-color: #5F9DF7;
+            text-transform: capitalize;
+        }
+    </style>
+    <h1>Welcome to gitPub</h1>
+    <ul>
+        <% for(let i=0; i < alldrinks.length; i++) { %>
+             <li>
+                <a href="/drinks/<%=i %>"><%=alldrinks[i].name %></a>
+             </li>
+             <% } %> 
+    </ul>
+</body>
+</html>
