@@ -4,9 +4,18 @@ const app = express();
 const drinks = require("./models/drinks");
 const food = require("./models/food");
 
+//great notes throughout your server files
+
+
 //Check that you have your Welcome to the Gitpub App!message displaying
+
+//since you have a home route, why not create linke to the drinks/food index pages
 app.get("/", (req, res) => {
-  res.send("<h1>Welcome to the Gitpub App!</h1>");
+  res.send(`
+  <h1>Welcome to the Gitpub App!</h1>
+  <button><a href='/drinks'>DRINKS</a></button>
+  <button><a href='/food'>FOOD</a></button>
+  `);
 });
 
 // foods list
